@@ -21,4 +21,3 @@ def chat():
                                               temperature=0.2)
     assistant_res = 
 
-    # for git 
