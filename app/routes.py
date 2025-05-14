@@ -21,3 +21,4 @@ def chat():
                                               temperature=0.2)
     assistant_res = 
 
+# I do not understand the problems in this file 
