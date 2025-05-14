@@ -21,3 +21,28 @@ Return exactly five bullets
 5. Typical use cases
 
  """
+
+CARD_TRB = """ <<CARD=Troubleshooting>>
+Return exactly five bullets 
+1. Root cause(s)
+2. Impact on Network
+3. KPIs affected 
+4. Recommended Fix
+5. Fallback
+
+ """
+
+CARD_DES = """ <<CARD=Design>>
+Return exactly five bullets 
+1. Objective
+2. Required Inputs
+3. Best Practices/Formula 
+4. Example
+5. Standards
+
+ """
+
+def dete_card_type(q:str)->str:
+    if _RGX_DEF.search(q): return CARD_DEF
+    if _RGX_TRB.search(q): return CARD_TRB
+    return CARD_DES 
