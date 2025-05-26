@@ -1,0 +1,9 @@
+{'company_name': 'Microsoft',
+ 'stock_code': 'MSFT',
+ 'Sentiment': 'Positive',
+ 'People_names': 'None mentioned',
+ 'Places_names': 'None mentioned',
+ 'Other_companies_referred': 'None mentioned',
+ 'related_industries': 'Technology, Cloud Computing, AI',
+ 'market_implications': 'Potential for increased enterprise adoption of Microsoft Copilot and stronger integration into work productivity tools, driving revenue growth and competitive advantage.',
+ 'confidence_score': 0.85}
