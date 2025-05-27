@@ -24,14 +24,14 @@ assert langfuse_callback_handler.auth_check()
 
 import os
 
-AZURE_OPENAI_API_KEY = "61bf1b6851924c80ad18edeaade9cc9a"
-AZURE_OPENAI_ENDPOINT = "https://eastus.api.cognitive.microsoft.com/"
+AZURE_OPENAI_API_KEY = ""
+AZURE_OPENAI_ENDPOINT = ""
 
 os.environ['AZURE_OPENAI_API_KEY'] = AZURE_OPENAI_API_KEY
 os.environ['AZURE_OPENAI_ENDPOINT'] = AZURE_OPENAI_ENDPOINT
 
-os.environ["LANGFUSE_PUBLIC_KEY"] = "pk-lf-50abecd0-3a0d-42db-9214-c323065da23a"
-os.environ["LANGFUSE_SECRET_KEY"] = "sk-lf-d25a8f0c-cd1b-49ec-b933-1ad31842b12e"
+os.environ["LANGFUSE_PUBLIC_KEY"] = ""
+os.environ["LANGFUSE_SECRET_KEY"] = ""
 os.environ["LANGFUSE_HOST"] = "https://cloud.langfuse.com" #"http://localhost:3000"
 
 lf = Langfuse(public_key=os.getenv("LANGFUSE_PUBLIC_KEY"),
