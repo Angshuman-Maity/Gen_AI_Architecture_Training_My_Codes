@@ -1,0 +1,8 @@
+Flask==3.1.1
+langchain==0.3.25
+langchain_community==0.3.24
+langchain_core==0.3.63
+langchain_openai==0.3.18
+langfuse==2.60.7
+openai==1.82.1
+redis==6.2.0
