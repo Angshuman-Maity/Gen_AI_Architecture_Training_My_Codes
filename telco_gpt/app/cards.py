@@ -42,7 +42,10 @@ Return exactly five bullets
 
  """
 
-def dete_card_type(q:str)->str:
-    if _RGX_DEF.search(q): return CARD_DEF
-    if _RGX_TRB.search(q): return CARD_TRB
-    return CARD_DES 
+def detect_card_type(q: str) -> str:
+    """Return the appropriate response card for the given query."""
+    if _RGX_DEF.search(q):
+        return CARD_DEF
+    if _RGX_TRB.search(q):
+        return CARD_TRB
+    return CARD_DES

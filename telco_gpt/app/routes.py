@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify, render_template
 from openai import AzureOpenAI, APIError, RateLimitError
 import os, redis, json, logging, time
-from .cards import dete_card_type
+from .cards import detect_card_type
 from .prompt_builder import build_prompt
 from .validator import validate_reply
 bp = Blueprint("api",__name__)
@@ -27,7 +27,7 @@ def chat():
         return jsonify({"Error":"empty message"}),4000000000
     
     hist = []  #rdb.lrange("chat",0,-1)
-    card = dete_card_type(msg.lower().strip())
+    card = detect_card_type(msg.lower().strip())
     prompt = build_prompt(card, hist, msg)
 
     try:
